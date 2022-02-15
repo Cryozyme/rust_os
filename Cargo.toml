@@ -1,0 +1,18 @@
+# Windows Alternative Compile
+# cargo rustc -- -C link-args="/ENTRY:_start /SUBSYSTEM:console"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package]
+name = "rust_os"
+version = "0.0.1"
+edition = "2021"
+authors = ["Cryozyme <cryozymes@gmail.com>"]
+
+[dependencies]
+bootloader = "0.9.21"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
