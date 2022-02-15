@@ -29,4 +29,3 @@ pub extern "C" fn _start() -> ! {  //This function is the entry point for the OS
 	}
 }
 //END ENTRYPOINT FUNCTION//
-
